@@ -1,0 +1,12 @@
+{
+  "name": "jqwiz",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "format": "prettier --write \"**/*.{json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{json,md,yml,yaml}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
