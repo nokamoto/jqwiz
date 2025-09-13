@@ -1,0 +1,11 @@
+[tasks.fmt]
+command = "cargo"
+args = ["fmt", "--all"]
+
+[tasks.lint]
+command = "cargo"
+args = ["clippy", "--all-targets", "--all-features", "--", "-D", "warnings"]
+
+[tasks.default]
+description = "Run formatter and linter by default"
+dependencies = ["fmt", "lint"]
